@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08080c" />
+  <title>Campus & Map | Techfest 2026 — IIT Bombay</title>
+  <meta name="description" content="Explore a 3D digital twin of the Techfest 2026 venues across the IIT Bombay campus in Powai, then plan your visit with travel, packing and timing guidance." />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta property="og:title" content="Campus & Map | Techfest 2026" />
+  <meta property="og:image" content="assets/tf-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=10" />
+</head>
+<body class="inner">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="tf-nav"></div>
+
+  <main id="main" class="site-main">
+    <section class="detail-hero">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Campus</p>
+      <p class="eyebrow">Campus digital twin</p>
+      <h1 class="h2">Nine stages on <em class="serif">one campus</em>.</h1>
+      <p class="lede">Drag to orbit the twin, then select a building to fly to a venue and see what happens there. A schematic map and visitor planning follow below.</p>
+    </section>
+
+    <section class="section section--wide">
+      <div class="campus-layout">
+        <div class="campus3d" aria-label="Interactive 3D campus map">
+          <canvas id="campus-canvas" aria-label="3D campus twin"></canvas>
+          <div class="c3d-nodes"></div>
+          <span class="c3d-hint">Drag to orbit · click a building to explore</span>
+        </div>
+        <div class="map-detail" id="mapDetail" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section section--wide">
+      <div class="section-head">
+        <p class="eyebrow">Schematic map</p>
+        <h2 class="h2">The flat view.</h2>
+        <p class="lede">A quick orientation of the venue zones across the Powai campus.</p>
+      </div>
+      <div class="campus-layout">
+        <div class="map-frame" id="mapFrame" aria-label="Schematic venue map">
+          <div class="map-grid"></div>
+          <div class="lake"></div>
+          <div class="road" style="left:0;right:0;top:46%;height:5px"></div>
+          <div class="road" style="top:0;bottom:0;left:41%;width:5px"></div>
+        </div>
+        <div class="map-legend" style="display:grid;gap:12px;align-content:start">
+          <span><i style="background:var(--gold)"></i> Academic core — Convocation, LTC, Labs</span>
+          <span><i style="background:var(--cyan)"></i> North lawn — Exhibition Hall, Innovation Hangar</span>
+          <span><i style="background:var(--ember)"></i> Gymkhana grounds — Robotics Arena</span>
+          <span><i style="background:var(--violet)"></i> Powai Lake — Lakeside Lawns, Open Air Theatre</span>
+          <span><i style="background:var(--gold-2)"></i> Central — Main Grounds</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="visit">
+      <div class="section-head">
+        <p class="eyebrow">Plan your visit</p>
+        <h2 class="h2">Getting there, and getting <em class="serif">the most out of it</em>.</h2>
+      </div>
+      <div class="event-grid" id="visitorPlan"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="eyebrow">Venues</p>
+        <h2 class="h2">Where things happen.</h2>
+      </div>
+      <div class="event-grid" id="venueList"></div>
+    </section>
+  </main>
+
+  <div id="tf-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/chrome.js?v=6"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/campus.js"></script>
+  <script type="module" src="js/campus3d.js"></script>
+</body>
+</html>

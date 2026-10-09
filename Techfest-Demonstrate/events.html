@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08080c" />
+  <title>Event Directory | Techfest 2026 — IIT Bombay</title>
+  <meta name="description" content="Browse every competition, workshop, lecture, exhibition and night event at Techfest 2026. Search and filter by category, venue and prize." />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta property="og:title" content="Event Directory | Techfest 2026" />
+  <meta property="og:description" content="Fifty arenas, four lecture halls and a floor of exhibitions, 16–18 December 2026." />
+  <meta property="og:image" content="assets/tf-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=10" />
+</head>
+<body class="inner">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="tf-nav"></div>
+
+  <main id="main" class="site-main">
+    <section class="detail-hero">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Events</p>
+      <p class="eyebrow">Event directory</p>
+      <h1 class="h2">Every arena, <em class="serif">every dais</em>.</h1>
+      <p class="lede">Search the full programme and filter by category. Each event page carries dates, venues, prize pools, eligibility and registration deadlines.</p>
+      <div class="hero-cta" style="margin-top:24px">
+        <a class="btn btn-gold" href="register.html">Register for Techfest</a>
+        <a class="btn btn-ghost" href="schedule.html">View schedule</a>
+      </div>
+    </section>
+
+    <section class="section section--wide" style="padding-top:24px">
+      <div class="toolbar">
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input id="eventSearch" type="search" placeholder="Search events, venues, keywords…" aria-label="Search events" autocomplete="off" />
+        </label>
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+      </div>
+      <div class="stack" style="gap:14px;margin-bottom:30px">
+        <div class="chip-row" id="catChips" role="group" aria-label="Filter by category"></div>
+        <div class="chip-row" id="pathChips" role="group" aria-label="Filter by pathway"></div>
+        <div class="chip-row" id="dayChips" role="group" aria-label="Filter by day"></div>
+      </div>
+      <div class="event-grid" id="eventGrid"></div>
+      <div class="section-cta">
+        <a class="btn btn-gold" href="register.html">Register for Techfest</a>
+        <a class="btn btn-ghost" href="plan.html">Build your route</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="tf-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/chrome.js?v=6"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/genome.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>

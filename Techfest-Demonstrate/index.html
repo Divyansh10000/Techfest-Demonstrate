@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08080c" />
+  <title>Techfest 2026 | IIT Bombay — An Astral Experience</title>
+  <meta name="description" content="Techfest 2026 at IIT Bombay — An Astral Experience. Asia's largest science and technology festival. Competitions, lectures, exhibitions and workshops, 16–18 December 2026, Powai, Mumbai." />
+  <meta name="author" content="Techfest, IIT Bombay" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta property="og:title" content="Techfest 2026 | IIT Bombay" />
+  <meta property="og:description" content="Welcome to An Astral Experience — 16–18 December 2026." />
+  <meta property="og:image" content="assets/tf-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=10" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <canvas id="tf-world" aria-hidden="true"></canvas>
+  <div class="world-loading" id="worldLoading" aria-hidden="true">
+    <p>Techfest · Entering the world</p>
+  </div>
+  <div id="tf-nav"></div>
+
+  <main id="main" class="site-main">
+    <header class="hero" data-stage="hero" id="top">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-meta">
+            <span>IIT Bombay</span><span class="dot"></span>
+            <span>Powai · Mumbai</span><span class="dot"></span>
+            <span>Edition XXIX</span><span class="dot"></span>
+            <span>16—18 Dec 2026</span>
+          </p>
+          <h1 class="hero-title">TECHFEST<span class="year">2026</span></h1>
+          <p class="hero-theme">An Astral Experience</p>
+          <p class="hero-copy">Asia's largest science and technology festival returns to the Powai campus for three days of machines, ideas and spectacle — fifty arenas, four lecture halls, and a floor where the future is already working.</p>
+          <div class="hero-cta">
+            <a class="btn btn-gold btn-lg" href="events.html">Explore Events</a>
+            <a class="btn btn-ghost btn-lg" href="schedule.html">View Schedule</a>
+            <a class="btn btn-ghost btn-lg" href="register.html">Register</a>
+          </div>
+          <div class="hero-facts">
+            <div><span class="label">Dates</span><strong>16–18 December 2026</strong></div>
+            <div><span class="label">Venue</span><strong>IIT Bombay, Powai</strong></div>
+            <div>
+              <span class="label">Countdown</span>
+              <div class="countdown-row" id="tf-countdown">
+                <span class="cd-unit"><b data-unit="d">00</b>d</span>
+                <span class="cd-unit"><b data-unit="h">00</b>h</span>
+                <span class="cd-unit"><b data-unit="m">00</b>m</span>
+                <span class="cd-unit"><b data-unit="s">00</b>s</span>
+              </div>
+            </div>
+            <div><span class="label">Entry</span><strong>Open to all</strong></div>
+          </div>
+        </div>
+      </div>
+      <span class="scroll-cue" aria-hidden="true"><span>Scroll to explore</span><i></i></span>
+    </header>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Techfest 2026 · 16–18 December · IIT Bombay · Powai · Mumbai · Asia&rsquo;s largest science &amp; technology festival · Compete · Learn · Discover · Experience ·&nbsp;</span>
+        <span>Techfest 2026 · 16–18 December · IIT Bombay · Powai · Mumbai · Asia&rsquo;s largest science &amp; technology festival · Compete · Learn · Discover · Experience ·&nbsp;</span>
+      </div>
+    </div>
+
+    <section class="section" data-stage="hero" id="festival">
+      <div class="section-head">
+        <p class="eyebrow">The scale</p>
+        <h2 class="h2">Twenty-nine editions deep into <em class="serif">the future</em>.</h2>
+        <p class="lede">Student-run since 1998, Techfest has grown into the continent's largest science and technology festival — a city that assembles for three days on the Powai campus.</p>
+      </div>
+      <div class="stat-grid" id="statGrid"></div>
+      <div class="section-cta">
+        <a class="btn btn-gold" href="about.html">Read our story</a>
+        <a class="btn btn-ghost" href="events.html">Explore events</a>
+      </div>
+    </section>
+
+    <section class="section" data-stage="hero" id="quick-nav">
+      <div class="section-head">
+        <p class="eyebrow">Quick links</p>
+        <h2 class="h2">Jump to <em class="serif">what matters</em>.</h2>
+      </div>
+      <div class="path-grid" id="quickNavGrid"></div>
+    </section>
+
+    <section class="section split" data-stage="earth">
+      <div>
+        <p class="eyebrow">Manifesto</p>
+        <h2 class="h2">A campus becomes <em class="serif">a living observatory</em>.</h2>
+        <p class="lede">Every December, lecture theatres, arenas, lawns and labs are rewritten as stages for work that usually stays behind closed doors. Competitors arrive with a year of engineering; visitors leave with a year of ideas.</p>
+        <div class="chip-row">
+          <span class="chip">Competitions</span>
+          <span class="chip">Workshops</span>
+          <span class="chip">Lectures</span>
+          <span class="chip">Exhibitions</span>
+          <span class="chip">Robowars</span>
+          <span class="chip">Technoholix</span>
+        </div>
+        <div class="section-cta">
+          <a class="btn btn-gold" href="about.html">Read the story</a>
+          <a class="btn btn-ghost" href="campus.html">Explore the campus</a>
+        </div>
+      </div>
+      <div class="tilt" style="border:1px solid var(--line);border-radius:6px;overflow:hidden">
+        <img src="assets/photos/campus.jpg" alt="IIT Bombay campus at dusk" loading="lazy" decoding="async" width="900" height="620" />
+      </div>
+    </section>
+
+    <section class="vignette" data-stage="earth" aria-label="The journey to Powai">
+      <img src="assets/photos/earth.jpg" data-parallax alt="Earth seen from orbit" loading="lazy" decoding="async" width="1600" height="900" />
+      <div class="vignette-copy">
+        <p class="line">From orbit, to one city, to a single campus on the edge of Powai Lake.</p>
+        <a class="btn btn-ghost" href="campus.html" style="margin-top:20px">Explore the campus</a>
+      </div>
+    </section>
+
+    <section class="section" data-stage="compete">
+      <div class="section-head">
+        <p class="eyebrow">Find your path</p>
+        <h2 class="h2">Five ways in.</h2>
+        <p class="lede">Techfest is not one audience. It is a student, a builder, a researcher, a founder and a visitor — each with a route through the festival.</p>
+      </div>
+      <div class="path-grid" id="pathGrid"></div>
+      <div class="section-cta">
+        <a class="btn btn-ghost" href="plan.html">Build your route</a>
+      </div>
+    </section>
+
+    <section class="section" data-stage="discover" id="pillars">
+      <div class="section-head">
+        <p class="eyebrow">The pillars</p>
+        <h2 class="h2">Compete, learn, discover, <em class="serif">experience</em>.</h2>
+        <p class="lede">Four ways into the festival. Choose a pillar and the world reorganises around it.</p>
+      </div>
+      <div class="pillar-stage" id="pillarGrid"></div>
+      <div class="section-cta">
+        <a class="btn btn-gold" href="events.html">Explore all events</a>
+      </div>
+    </section>
+
+    <section class="section section--wide" data-stage="discover">
+      <div class="section-head">
+        <p class="eyebrow">Featured</p>
+        <h2 class="h2">The arena, the talks, <em class="serif">the flex</em>.</h2>
+        <p class="lede">A first look at some of what is waiting. The full directory runs across competitions, workshops, lectures, exhibitions and the night programme.</p>
+      </div>
+      <div class="event-grid" id="featuredGrid"></div>
+      <div class="section-cta">
+        <a class="btn btn-gold" href="events.html">Open the full directory</a>
+        <a class="btn btn-ghost" href="schedule.html">View schedule</a>
+      </div>
+    </section>
+
+    <section class="section" data-stage="discover" id="schedule-preview">
+      <div class="section-head">
+        <p class="eyebrow">Three days</p>
+        <h2 class="h2">Ignition, apogee, <em class="serif">afterglow</em>.</h2>
+        <p class="lede">Each day has a theme and a rhythm — heats and workshops by day, marquee lectures at noon, Technoholix after dark. Here is the shape of all three.</p>
+      </div>
+      <div class="event-grid" id="dayPreviewGrid"></div>
+      <div class="section-cta">
+        <a class="btn btn-gold" href="schedule.html">Open the full schedule</a>
+        <a class="btn btn-ghost" href="plan.html">Plan my days</a>
+      </div>
+    </section>
+
+    <section class="section" data-stage="discover" id="exhibitions">
+      <div class="section-head">
+        <p class="eyebrow">The floor</p>
+        <h2 class="h2">Installations you <em class="serif">walk around</em>.</h2>
+        <p class="lede">Six zones across the exhibition halls and innovation hangars, where working technology is unpacked for a crowd instead of a datasheet.</p>
+      </div>
+      <div class="install-grid" id="installGrid"></div>
+      <div class="section-cta">
+        <a class="btn btn-gold" href="events.html?cat=exhibitions">Tour the exhibitions</a>
+      </div>
+    </section>
+
+    <section class="robowars-cinema" data-stage="robowars" aria-label="Robowars">
+      <canvas id="robowars-canvas" aria-hidden="true"></canvas>
+      <div class="rw-wrap">
+        <p class="line">Flagship · Robotics Arena · 18 December</p>
+        <div class="rw-count" id="rwCount" aria-live="polite">3</div>
+        <h2 class="h2">ROBOWARS</h2>
+        <p class="rw-state" id="rwState">Loading the arena…</p>
+        <p class="lede">Two machines enter the cage. One leaves standing. Fighting robots in two weight classes meet in a shatter-proof arena for three-minute bouts decided by knockout or judges' decision — under lights, with pyro and a live countdown.</p>
+        <div class="rw-hud">
+          <div><span class="label">Weight classes</span><strong>15 / 60 kg</strong></div>
+          <div><span class="label">Prize pool</span><strong>₹12L</strong></div>
+          <div><span class="label">Bout length</span><strong>3:00</strong></div>
+          <div><span class="label">Finale</span><strong>18 Dec · 14:00</strong></div>
+        </div>
+        <div class="rw-controls">
+          <button class="btn btn-gold btn-lg" id="rwStart" type="button">Replay the bout</button>
+          <a class="btn btn-ghost btn-lg" href="event.html?id=robowars">Enter the arena</a>
+          <a class="btn btn-ghost btn-lg" href="events.html?cat=robowars">All robotics</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-stage="night">
+      <div class="section-head">
+        <p class="eyebrow">The dais</p>
+        <h2 class="h2">From a lecture hall, <em class="serif">to the lab, to the dome</em>.</h2>
+        <p class="lede">Marquee lectures put space, security, robotics and a to-be-revealed headline speaker on the same stage across three days.</p>
+      </div>
+      <div class="speaker-grid" id="speakerGrid"></div>
+      <div class="section-cta">
+        <a class="btn btn-gold" href="events.html?cat=lectures">All lectures</a>
+      </div>
+    </section>
+
+    <section class="daynight" data-stage="night" aria-label="Night at Techfest">
+      <img src="assets/photos/neon.jpg" data-parallax alt="Festival lights at night" loading="lazy" decoding="async" width="1600" height="900" />
+      <div class="daynight-copy">
+        <p class="line">When the sun sets, the campus becomes a stage for lights, sound and spectacle.</p>
+        <a class="btn btn-gold" href="events.html?cat=entertainment" style="margin-top:20px">Explore Technoholix</a>
+      </div>
+    </section>
+
+    <section class="section split" data-stage="night" id="campus-preview">
+      <div>
+        <p class="eyebrow">Campus digital twin</p>
+        <h2 class="h2">Nine stages on <em class="serif">one campus</em>.</h2>
+        <p class="lede">Convocation Hall to the Robotics Arena, the Exhibition Hall to the Open Air Theatre — orbit a stylised 3D twin of IIT Bombay, pick a building, and see what happens there.</p>
+        <div class="section-cta">
+          <a class="btn btn-gold" href="campus.html">Explore the campus</a>
+          <a class="btn btn-ghost" href="campus.html#visit">Plan your visit</a>
+        </div>
+      </div>
+      <div class="tilt" style="border:1px solid var(--line);border-radius:6px;overflow:hidden">
+        <img src="assets/photos/students.jpg" alt="Students crossing the IIT Bombay campus during Techfest" loading="lazy" decoding="async" width="900" height="620" />
+      </div>
+    </section>
+
+    <section class="section" data-stage="night" id="planner-cta">
+      <div class="section-head">
+        <p class="eyebrow">Build your Techfest</p>
+        <h2 class="h2">Three days are long. <em class="serif">Plan the right ones</em>.</h2>
+        <p class="lede">Tell the planner what you care about and how much time you have. It assembles a personal route across arenas, studios, the dais and the floor — and remembers it for next time.</p>
+      </div>
+      <div class="planner-grid" id="homePlanner"></div>
+      <div class="section-cta">
+        <a class="btn btn-gold btn-lg" href="plan.html">Open the planner</a>
+      </div>
+    </section>
+
+    <section class="journey" data-stage="journey">
+      <p class="path">Earth <b>→</b> India <b>→</b> Mumbai <b>→</b> IIT Bombay <b>→</b> <b>Techfest 2026</b></p>
+      <h2 class="h2">You have arrived at <em class="serif">the future</em>.</h2>
+      <p class="lede" style="margin-left:auto;margin-right:auto">Three days. Fifty arenas. One campus. Register now and be here on 16 December.</p>
+      <div class="cta">
+        <a class="btn btn-gold btn-lg" href="register.html">Register for Techfest</a>
+        <a class="btn btn-ghost btn-lg" href="events.html">Explore events</a>
+        <a class="btn btn-ghost btn-lg" href="schedule.html">View schedule</a>
+      </div>
+    </section>
+
+    <section class="section" data-stage="register">
+      <div class="section-head">
+        <p class="eyebrow">Voices</p>
+        <h2 class="h2">What people carry home.</h2>
+        <p class="lede">Competitors, founders, faculty and visitors on what Techfest meant to them.</p>
+      </div>
+      <div class="quote-grid" id="quoteGrid"></div>
+    </section>
+
+    <section class="section" data-stage="register" id="legacy">
+      <div class="section-head">
+        <p class="eyebrow">Legacy</p>
+        <h2 class="h2">Since 1998.</h2>
+        <p class="lede">From a student gathering to a continental festival — twenty-nine years, told in chapters.</p>
+      </div>
+      <ul class="timeline" id="homeTimeline"></ul>
+      <div class="section-cta">
+        <a class="btn btn-ghost" href="about.html#legacy">Full story</a>
+      </div>
+    </section>
+
+    <section class="section" data-stage="register">
+      <div class="section-head">
+        <p class="eyebrow">Partners</p>
+        <h2 class="h2">Built with.</h2>
+        <p class="lede">The organisations that make the festival possible — across technology, academia and outreach.</p>
+      </div>
+      <div id="partnersList"></div>
+      <div class="section-cta">
+        <a class="btn btn-ghost" href="about.html#contact">Become a partner</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="tf-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/chrome.js?v=6"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/genome.js"></script>
+  <script src="js/home.js"></script>
+  <script type="module" src="js/world.js"></script>
+  <script type="module" src="js/robowars.js"></script>
+</body>
+</html>

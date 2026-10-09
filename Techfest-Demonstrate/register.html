@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08080c" />
+  <title>Register | Techfest 2026 — IIT Bombay</title>
+  <meta name="description" content="Register for Techfest 2026 at IIT Bombay. Choose your pathway — Student, Builder, Researcher, Startup or Visitor — and join the 29th edition." />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta property="og:title" content="Register | Techfest 2026" />
+  <meta property="og:image" content="assets/tf-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=10" />
+</head>
+<body class="inner">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="tf-nav"></div>
+
+  <main id="main" class="site-main">
+    <section class="detail-hero">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Register</p>
+      <p class="eyebrow">Registration</p>
+      <h1 class="h2">Claim your place on <em class="serif">the floor</em>.</h1>
+      <p class="lede">Registration sets up your festival pass and unlocks the workshop and lecture windows. It takes less than a minute.</p>
+    </section>
+
+    <section class="section">
+      <div class="split" style="align-items:start">
+        <form class="card" id="regForm" novalidate>
+          <h2 class="h3 mt-0">Festival registration</h2>
+          <p class="sub">Choose a pathway and tell us who you are. Fields marked with * are required.</p>
+          <div class="form-grid" style="margin-top:24px">
+            <div class="field" data-err="Please enter your full name.">
+              <label for="name">Full name <span class="req">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <div class="field" data-err="Enter a valid email address.">
+              <label for="email">Email <span class="req">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <div class="field" data-err="Enter a valid phone number.">
+              <label for="phone">Phone <span class="req">*</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="institution">Institution / organisation</label>
+              <input id="institution" name="institution" type="text" autocomplete="organization" />
+              <span class="err"></span>
+            </div>
+            <div class="field">
+              <label for="city">City</label>
+              <input id="city" name="city" type="text" autocomplete="address-level2" />
+              <span class="err"></span>
+            </div>
+            <div class="field">
+              <label for="interest">Interested in</label>
+              <select id="interest" name="interest"></select>
+              <span class="err"></span>
+            </div>
+            <div class="field full" id="pathwayField" data-err="Choose a pathway to continue.">
+              <label>Pathway <span class="req">*</span></label>
+              <div class="chip-row" id="pathChips" role="group" aria-label="Choose your pathway"></div>
+              <input type="hidden" name="pathway" id="pathwayInput" required />
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <div class="field full">
+              <label for="message">Anything we should know? <span class="req">optional</span></label>
+              <textarea id="message" name="message" placeholder="Team details, accessibility needs, questions…"></textarea>
+              <span class="err"></span>
+            </div>
+            <div class="field full" data-err="Please accept to continue.">
+              <label style="display:flex;gap:10px;align-items:flex-start;text-transform:none;letter-spacing:0;font-family:var(--font);font-size:14px;color:var(--muted)">
+                <input type="checkbox" id="consent" name="consent" required style="width:auto;min-height:0;margin-top:4px" />
+                <span>I understand this is a concept registration and agree to be contacted about Techfest 2026.</span>
+              </label>
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </div>
+          <button class="btn btn-gold btn-lg" type="submit" style="margin-top:18px">Submit registration</button>
+        </form>
+
+        <aside class="stack">
+          <div class="card">
+            <span class="tag">Why register</span>
+            <ul class="highlights" style="margin-top:14px">
+              <li>Priority seats at marquee lectures</li>
+              <li>Access to the workshop application window</li>
+              <li>Festival pass details and evening programme</li>
+              <li>Outstation accommodation on request</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="tag">A note</span>
+            <p class="sub">Competitive events register per team on each event page. This form covers your festival registration.</p>
+            <a class="btn btn-ghost btn-sm" href="events.html">Browse events</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="tf-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/chrome.js?v=6"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

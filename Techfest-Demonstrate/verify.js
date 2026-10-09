@@ -1,0 +1,16 @@
+global.window = {};
+const fs = require('fs');
+const code = fs.readFileSync('js/data.js', 'utf8');
+eval(code);
+console.log('Events:', TF.events.length);
+console.log('Stats:', TF.stats.length);
+console.log('Timeline:', TF.timeline.length);
+console.log('Testimonials:', TF.testimonials.length);
+console.log('Winners:', TF.winners.length);
+console.log('FAQs:', TF.faqs.length);
+console.log('Speakers:', TF.speakers.length);
+console.log('Exhibitions:', TF.exhibitions.length);
+console.log('Interests:', TF.interests.length);
+console.log('VisitorPlan:', TF.visitorPlan.length);
+console.log('EventDetails:', Object.keys(TF.eventDetails).length);
+console.log('Routes:', Object.keys(TF.routes).length);
